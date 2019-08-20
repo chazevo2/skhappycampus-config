@@ -1,15 +1,18 @@
 msaconfig:
   greeting: "hello"
   topic-name: "coffee-topic"
-  
+  ipaddress: "192.168.10.1"
+  dbtype: "oracle"
 ---
 
 spring:
   profiles: local
 
 msaconfig:
-  greeting: "welcome to local server!"
+  greeting: "Hi, local server."
   topic-name: "coffee-topic-local"
+  ipaddress: "192.168.10.2"
+  dbtype: "mysql"
   
 ---
 
@@ -19,7 +22,8 @@ spring:
 msaconfig:
   greeting: "welcome to dev server"
   topic-name: "coffee-topic-dev"
-  
+  ipaddress: "192.168.10.3"
+  dbtype: "nosql"
 ---
 
 spring:
